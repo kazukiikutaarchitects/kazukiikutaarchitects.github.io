@@ -5,14 +5,37 @@
   </head>
   <body>
     <div class="container">
-      Under maintenance
+      <div class="maintenance">
+        UNDER MAINTENANCE
+      </div>
+      <p class="message">
+      お越しいただき有難うございます。<br />只今ホームページ制作中です。<br />申し訳ございませんが、今しばらくお待ちください。
+      </p>
+      <img src="images/logo.jpg" />
     </div>
   </body>
 <style>
   .container {
-    width: 360px;
+    width: 80%;
+    max-width: 960px;
     margin: 120px auto;
-    font-size: 32px;
+    text-align: center;
+  }
+  .container .maintenance {
+    text-align: center;
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 8px;
+  }
+  .container .message {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 4px;
+    line-height: 2;
+  }
+  .container img {
+    width: 80%;
+    margin: 0 auto;
   }
 </style>
 </html>
