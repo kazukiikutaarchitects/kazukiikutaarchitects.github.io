@@ -5,7 +5,7 @@
   "scripts": {
     "clear": "rm -rf dist",
     "dev": "yarn run clear && yarn run parcel src/*.html --no-cache",
-    "build": "yarn run clear && yarn run parcel build src/*.html --out-dir public",
+    "build": "yarn run clear && yarn run parcel build src/*.html --out-dir ./",
     "now-build": "yarn build"
   },
   "dependencies": {
