@@ -1,0 +1,10 @@
+.footer {
+  border-top: 1px solid $color-black;
+  width: 100%;
+  padding: 10px 0;
+
+  &__copy {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}

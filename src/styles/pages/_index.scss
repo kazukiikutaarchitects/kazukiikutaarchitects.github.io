@@ -1,0 +1,106 @@
+.mainvisual {
+  img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.work {
+  max-width: 1200px;
+  margin: 50px auto 30px;
+  padding: 0 4%;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  &__item {
+    margin: 5px;
+  }
+
+  &__link {
+    img {
+      width: 20vw;
+      height: 20vw;
+      object-fit: cover;
+      object-position: center;
+    }
+
+  &:hover {
+    img {
+      opacity: .6;
+      transition: .3s;
+      }
+    }
+  }
+}
+
+.about {
+  max-width: 1200px;
+  text-align: center;
+  margin: 210px auto;
+
+  &__title {
+    margin: 120px 0 60px;
+    font-size: 2.4rem;
+  }
+
+  &__text {
+    font-size: 2rem;
+  }
+
+  &__box {
+    margin-top: 50px;
+    font-size: 1.6rem;
+  }
+
+  &__subtitle {
+    font-weight: bold;
+  }
+
+  &__note {
+    margin-top: 20px;
+  }
+}
+
+.contact {
+  max-width: 1200px;
+  margin: 210px auto;
+  padding: 0 4%;
+
+  &__wrap {
+    display: flex;
+    margin-top: 120px;
+  }
+
+  &__box {
+    width: 50%;
+  }
+
+  &__group {
+    margin-bottom: 24px;
+  }
+
+  &__label {
+    margin-bottom: 12px;
+    font-weight: bold;
+  }
+}
+
+.instagram {
+  max-width: 1200px;
+  padding: 0 4%;
+  margin: 210px auto;
+
+  img {
+    display: block;
+    width: 40%;
+    margin: 50px auto;
+  }
+}

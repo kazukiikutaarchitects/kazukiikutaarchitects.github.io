@@ -3,9 +3,9 @@ bodyclass: index
 meta:
   favicon: /img/favicon.ico
   title: サンプル
-  description: いつでも気軽に女性の専門医師に相談できるオンライン医療サービス。あなたのライフスタイルに合わせて、自宅でいつでも簡単にチャット形式で遠隔診断できます。女性ならではの健康上の不安や症状についてお気軽に相談してください。
+  description: サンプル
   image: img/og-image.jpg
-  url: https://consult.anamne.com
+  url: https://kazukiikutaarchitects.github.io/
   robots: index, follow
 
 scripts:
@@ -13,12 +13,93 @@ scripts:
 stylesheets:
   - styles/main.scss
   - https://fonts.googleapis.com/css?family=Noto+Sans+JP
+  - https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700&display=swap&subset=japanese
+
 uri: /
 ---
 
 {{#extend "base"}}
   {{#content "main"}}
-    <main>
+    <main class="index">
+      <section id="mainvisual" class="mainvisual">
+        <img src="img/work/ootakunokoya/ootakunokoya_01.jpg" alt="生田一希建築設計事務所">
+      </section>
+
+      <section id="work" class="work">
+        <h2 class="title">
+          Work
+        </h2>
+        <ul class="work__list">
+          <li class="work__item">
+            <a class="work__link" href="">
+              <img src="img/work/ootakunokoya/ootakunokoya_01.jpg" alt="生田一希建築設計事務所">
+            </a>
+          </li>
+          <li class="work__item">
+            <a class="work__link" href="">
+              <img src="img/work/tenclub/tenclub_02.jpg" alt="生田一希建築設計事務所">
+            </a>
+          </li>
+          <li class="work__item">
+            <a class="work__link" href="">
+              <img src="img/work/ichikawa renovation/ichikawa_01.png" alt="生田一希建築設計事務所">
+            </a>
+          </li>
+          <li class="work__item">
+            <a class="work__link" href="">
+              <img src="img/work/hachinobou/hachinobou_01.jpeg" alt="生田一希建築設計事務所">
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="about">
+        <h2 class="title">About</h2>
+
+        <p class="about__title">「サンプル」</p>
+        <p class="about__text">サンプル</p>
+
+        <div class="about__box">
+          <h3 class="about__subtitle">Business Contents</h3>
+          <p class="about__note">建築設計 / 環境計画 / 内装設計 / 家具意匠 / 図面下請け / CGパース作成 / CG動画作成</p>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2 class="title">Contact</h2>
+        <div class="contact__wrap">
+          <div class="contact__box">
+            <div class="contact__group">
+              <p class="contact__label">Company</p>
+              <p class="contact__text">生田一希建築設計事務所</p>
+            </div>
+            <div class="contact__group">
+              <p class="contact__label">Address</p>
+              <p class="contact__text">143-0024 東京都大田区中央2-3-11</p>
+            </div>
+
+            <div class="contact__group">
+              <p class="contact__label">Contact</p>
+              <p class="contact__text">ikutakazuki.1209@icloud.com</p>
+            </div>
+
+            <div class="contact__group">
+              <p class="contact__label">Foundation</p>
+              <p class="contact__text">2022/04</p>
+            </div>
+          </div>
+          <div class="contact__box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.946455968606!2d139.7208579150667!3d35.579713380218024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601860376d562c1f%3A0x52cfa067212e1033!2z44CSMTQzLTAwMjQg5p2x5Lqs6YO95aSn55Sw5Yy65Lit5aSu77yS5LiB55uu77yT4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1646647535079!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="instagram">
+        <h2 class="title">
+          Instagram
+        </h2>
+        <img src="img/work/hachinobou/hachinobou_01.jpeg" alt="生田一希建築設計事務所">
+      </section>
     </main>
   {{/content}}
 {{/extend}}
