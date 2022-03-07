@@ -1,0 +1,126 @@
+/* Font sizes */
+$font-size-xxlarge: 3rem; // 48px
+$font-size-xlarge: 2rem; // 36px
+$font-size-large: 1.5rem; // 24px
+$font-size-medium: 1.25rem; // 20px
+$font-size-base: 1rem; // 16px
+$font-size-default: 0.875rem; // 14px
+$font-size-small: 0.75rem; // 12px
+$font-size-smaller: 0.625rem; // 10px
+
+/* Line Heights */
+$line-height-default: 1.6em;
+$line-height-compact: 1.3em;
+/* Sizes */
+$size-col-max-width: 1200px;
+$size-col-text: 700px;
+
+/* Colors */
+$color-blue: #2196f3;
+$color-brand-anamne: #038E74;
+$color-brand: #ed553e;
+$color-text-default: #2A3039;
+$color-text-body: rgba($color-text-default, 0.6);
+$color-border: #eee;
+
+%gradient-h {
+  background: linear-gradient(41.64deg, #fdf0e0 0.06%, #f97460 100.01%);
+}
+
+%gradient-h-blue {
+  background: linear-gradient(0.34deg, #2196F3 35.01%, #00bcd4 99.02%);
+}
+
+%gradient-v {
+  background: linear-gradient(11.18deg, #fdf0e0 0.06%, #f97460 100.01%);
+}
+
+%gradient-v-blue {
+  background: linear-gradient(11.18deg, #00bcd4 0.06%, #2196f3 100.01%);
+}
+
+%gradient-light-h {
+  background: linear-gradient(90deg, #FFFFFF 0%, #f59a8c 100%), #ffcccc;
+}
+
+%glow {
+  box-shadow: 0px 0px 12px rgba($color-brand, 0.2);
+}
+
+%glow-blue {
+  box-shadow: 0px 0px 12px rgba($color-blue, 0.2);
+}
+
+/* Media Query */
+@mixin mobile {
+  @media only screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 641px) {
+    @content;
+  }
+}
+
+/* Type */
+%fontFamily-default {
+  font-family: 'M PLUS 1p','Noto Sans JP', 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', '游ゴシック', 'メイリオ', meiryo, sans-serif;
+}
+
+%font-Poppins {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+%text-body {
+  font-size: $font-size-default;
+  color: $color-text-body;
+  line-height: $line-height-default;
+}
+
+%text-section-tag {
+  @extend %font-Poppins;
+  font-size: $font-size-medium;
+  color: $color-brand;
+  text-align: center;
+  margin: 0 auto 8px;
+}
+
+%text-section-title {
+  color: $color-text-default;
+  font-size: $font-size-large;
+  line-height: $line-height-default;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  @include tablet {
+    font-size: $font-size-large;
+    br {
+      display: none;
+    }
+  };
+  @include mobile {
+    font-size: $font-size-medium;
+  };
+}
+
+/* Layout */
+
+%layout-column {
+  max-width: $size-col-max-width;
+  margin: auto;
+  padding: 0 16px;
+  @include tablet {
+    box-sizing: border-box;
+    max-width: 100%;
+  };
+}
