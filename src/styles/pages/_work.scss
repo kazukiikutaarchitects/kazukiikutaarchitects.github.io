@@ -1,0 +1,43 @@
+.contents {
+  margin: 120px auto;
+  max-width: 1200px;
+  text-align: center;
+
+  &__title {
+    font-size: 3.2rem;
+  }
+
+  &__subtitle {
+    font-size: 1.6rem;
+    margin: 8px 0 80px;
+  }
+
+  &__text {
+    margin: auto;
+    max-width: 980px;
+    line-height: 2.6rem;
+    letter-spacing: .2rem;
+
+    &:last-child {
+      max-width: 750px;
+      margin-top: 50px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  &__item {
+    margin: 5px;
+
+    img {
+      width: 15vw;
+      height: 15vw;
+      object-fit: cover;
+    }
+  }
+}
