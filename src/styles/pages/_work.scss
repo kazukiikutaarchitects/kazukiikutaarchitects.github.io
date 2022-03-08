@@ -40,4 +40,20 @@
       object-fit: cover;
     }
   }
+
+  @include mobile {
+    margin: 80px auto;
+    padding: 0 4%;
+
+    &__subtitle {
+      margin: 8px 0 40px;
+    }
+
+    &__item {
+      img {
+        width: 40vw;
+        height: 40vw;
+      }
+    }
+  }
 }
