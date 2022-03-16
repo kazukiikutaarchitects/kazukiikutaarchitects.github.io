@@ -16,7 +16,7 @@
 .work {
   max-width: 1200px;
   margin: 50px auto 30px;
-  padding: 0 4%;
+  padding: 0 2%;
 
   &__list {
     display: flex;
@@ -32,8 +32,8 @@
 
   &__link {
     img {
-      width: 15vw;
-      height: 15vw;
+      width: 18vw;
+      height: 18vw;
       object-fit: cover;
       object-position: center;
     }
