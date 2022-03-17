@@ -1,7 +1,7 @@
 .mainvisual {
   img {
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     object-fit: cover;
     object-position: center;
   }
@@ -14,15 +14,13 @@
 }
 
 .work {
-  max-width: 1200px;
-  margin: 50px auto 30px;
+  margin: 350px auto;
   padding: 0 2%;
 
   &__list {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     margin-top: 40px;
   }
 
@@ -32,8 +30,8 @@
 
   &__link {
     img {
-      width: 18vw;
-      height: 18vw;
+      width: 24vw;
+      height: 24vw;
       object-fit: cover;
       object-position: center;
     }
@@ -47,8 +45,11 @@
   }
 
   @include mobile {
+    margin: 80px auto;
+
     &__list {
       margin-top: 20px;
+      flex-wrap: wrap;
     }
 
     &__link {
@@ -63,7 +64,7 @@
 .about {
   max-width: 1200px;
   text-align: center;
-  margin: 210px auto;
+  margin: 350px auto;
 
   &__title {
     margin: 120px 0 60px;
@@ -104,7 +105,7 @@
 
 .contact {
   max-width: 1200px;
-  margin: 210px auto;
+  margin: 350px auto;
   padding: 0 4%;
 
   &__wrap {
@@ -153,15 +154,27 @@
   }
 }
 
-.instagram {
+.sns {
   max-width: 1200px;
   padding: 0 4%;
-  margin: 210px auto;
+  margin: 350px auto;
 
-  img {
-    display: block;
-    width: 40%;
-    margin: 50px auto;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  &__item {
+    width: 50px;
+    margin: 10px;
+
+    a {
+      &:hover {
+        opacity: .5;
+      }
+    }
   }
 
   @include mobile {
