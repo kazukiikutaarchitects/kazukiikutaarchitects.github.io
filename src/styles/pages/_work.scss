@@ -39,6 +39,12 @@
     }
   }
 
+  &__text {
+    text-align: left;
+    max-width: 300px;
+    margin: 50px auto;
+  }
+
   @include mobile {
     margin: 80px auto;
     padding: 0 4%;
