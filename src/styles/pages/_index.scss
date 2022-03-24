@@ -20,8 +20,9 @@
   &__list {
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-top: 40px;
+    justify-content: left;
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -30,8 +31,8 @@
 
   &__link {
     img {
-      width: 24vw;
-      height: 24vw;
+      width: 23.3vw;
+      height: 23.3vw;
       object-fit: cover;
       object-position: center;
     }
