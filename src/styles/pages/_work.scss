@@ -44,6 +44,7 @@
   @include mobile {
     margin: 80px auto;
     padding: 0 4%;
+    max-width: 350px;
 
     &__subtitle {
       margin: 8px 0 40px;
