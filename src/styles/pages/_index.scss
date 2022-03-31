@@ -33,6 +33,8 @@
     img {
       object-fit: cover;
       object-position: center;
+      width: 23.3vw;
+      height: 23.3vw;
     }
 
   &:hover {
@@ -61,26 +63,24 @@
   }
 }
 
-.contact {
+.about {
   max-width: 1200px;
   margin: 350px auto;
   padding: 0 4%;
 
   &__wrap {
-    display: flex;
-    margin-top: 120px;
+    margin: 120px auto 0;
   }
 
   &__box {
-    width: 50%;
-
     iframe {
       width: 100%;
-      height: 100%;
+      height: 336px;
     }
   }
 
   &__group {
+    text-align: center;
     margin-bottom: 24px;
   }
 
@@ -102,7 +102,7 @@
       width: 100%;
 
       iframe {
-        height: 230px;
+        height: 354px;
       }
     }
 
@@ -140,31 +140,3 @@
     padding: 40px 4%;
   }
 }
-
-
-// // カラムが収まる幅になるように段階的に調整する
-// // $column-width: 1カラムの幅
-// // $max-column: 最大カラム数
-// @mixin flex-fitting($column-width, $max-column) {
-//   @for $i from 1 through $max-column {
-//     @media only screen and (min-width: $i * $item-width) {
-//       max-width: $i * $item-width;
-//     }
-//   }
-// }
-
-// // アイテムの幅（マージンも含む）
-// $item-width: 120px;
-
-// .work__list {
-//   display: flex;
-//   margin: 0 auto;
-//   flex-wrap: wrap;
-
-//   @include flex-fitting($item-width, 10);
-// }
-
-// .work__item {
-//   width: $item-width - 20px;  // margin分引く
-//   margin: 10px;
-// }
