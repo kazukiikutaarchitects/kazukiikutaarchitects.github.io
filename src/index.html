@@ -1,0 +1,114 @@
+---
+bodyclass: index
+meta:
+  favicon: /img/favicon.ico
+  title: 生田一希建築設計事務所 | Kazuki Ikuta Architects
+  description: 東京都大田区を拠点に活動する生田一希建築設計事務所です。業務内容：建築設計/内装設計/環境計画/家具意匠/図面下請け/CGパース作成/CG動画作成
+  image: img/og-image.jpg
+  url: https://kazukiikutaarchitects.github.io/
+  robots: index, follow
+
+scripts:
+  - http://code.jquery.com/jquery-3.1.0.min.js
+  - js/main.js
+stylesheets:
+  - styles/main.scss
+  - https://fonts.googleapis.com/css?family=Noto+Sans+JP
+  - https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700&display=swap&subset=japanese
+
+uri: /
+---
+
+{{#extend "base"}}
+  {{#content "main"}}
+    <main class="index">
+      <section id="mainvisual" class="mainvisual">
+        <img src="img/work/main.jpg" alt="生田一希建築設計事務所">
+      </section>
+
+      <section id="work" class="work">
+        <h2 class="title">
+          Works
+        </h2>
+        <ul class="work__list">
+          <li class="work__item">
+            <a class="work__link" href="work01.html">
+              <img src="img/work/ootakunokoya/ootakunokoya_01.jpg" alt="生田一希建築設計事務所">
+            </a>
+          </li>
+          <li class="work__item">
+            <a class="work__link" href="work02.html">
+              <img src="img/work/tenclub/tenclub_02.jpg" alt="生田一希建築設計事務所">
+            </a>
+          </li>
+          <li class="work__item">
+            <a class="work__link" href="work03.html">
+              <img src="img/work/ichikawa renovation/ichikawa_01.png" alt="生田一希建築設計事務所">
+            </a>
+          </li>
+          <li class="work__item">
+            <a class="work__link" href="work04.html">
+              <img src="img/work/hachinobou/hachinobou_01.jpeg" alt="生田一希建築設計事務所">
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="about" class="about">
+        <h2 class="title">About</h2>
+        <div class="about__wrap">
+          <div class="about__box">
+            <div class="about__group">
+              <p class="about__label">Company</p>
+              <p class="about__text">生田一希建築設計事務所</p>
+            </div>
+            <div class="about__group">
+              <p class="about__label">Contents</p>
+              <p class="about__text">建築設計 / 内装設計 / 家具意匠 / 図面下請け / CGパース作成 / CG動画作成</p>
+            </div>
+            <div class="about__group">
+              <p class="about__label">Address</p>
+              <p class="about__text">143-0024 東京都大田区中央2-3-11</p>
+            </div>
+
+            <div class="about__group">
+              <p class="about__label">Contact</p>
+              <p class="about__text">ikutakazuki.1209@icloud.com</p>
+            </div>
+
+            <div class="about__group">
+              <p class="about__label">Foundation</p>
+              <p class="about__text">2022/04</p>
+            </div>
+          </div>
+          <div class="about__box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.946455968606!2d139.7208579150667!3d35.579713380218024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601860376d562c1f%3A0x52cfa067212e1033!2z44CSMTQzLTAwMjQg5p2x5Lqs6YO95aSn55Sw5Yy65Lit5aSu77yS5LiB55uu77yT4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1646647535079!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="sns" class="sns">
+        <h2 class="title">
+          SNS
+        </h2>
+        <ul class="sns__list">
+          <li class="sns__item">
+            <a href="https://www.instagram.com/kazuki.ikuta.architects/?hl=ja" target=”_blank”>
+              <img src="img/sns/instagram.svg" alt="生田一希建築設計事務所">
+            </a>
+          </li>
+          <li class="sns__item">
+            <a href="https://twitter.com/ikuta_kazuki" target=”_blank”>
+              <img src="img/sns/twitter.svg" alt="生田一希建築設計事務所">
+            </a>
+          </li>
+          <li class="sns__item">
+            <a href="https://www.facebook.com/jazuki.ikuta" target=”_blank”>
+              <img src="img/sns/fb.svg" alt="生田一希建築設計事務所">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  {{/content}}
+{{/extend}}

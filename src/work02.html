@@ -1,0 +1,71 @@
+---
+bodyclass: work01
+meta:
+  favicon: /img/favicon.ico
+  title: 生田一希建築設計事務所 | Kazuki Ikuta Architects
+  description: 東京都大田区を拠点に活動する生田一希建築設計事務所です。業務内容：建築設計/内装設計/環境計画/家具意匠/図面下請け/CGパース作成/CG動画作成
+  image: img/og-image.jpg
+  url: https://kazukiikutaarchitects.github.io/
+  robots: index, follow
+
+scripts:
+  - js/main.js
+stylesheets:
+  - styles/main.scss
+  - https://fonts.googleapis.com/css?family=Noto+Sans+JP
+  - https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700&display=swap&subset=japanese
+
+uri: /
+---
+
+{{#extend "pages"}}
+  {{#content "main"}}
+    <main class="main">
+
+      <section class="contents">
+        <h2 class="contents__title">
+          TEN CLUB KOENJI
+        </h2>
+        <h3 class="contents__subtitle">
+          Suginami-ku,Tokyo,Japan
+        </h3>
+
+        <ul class="contents__list">
+          <li class="contents__item">
+            <a href="img/work/tenclub/tenclub_01.jpg" data-lightbox="works02">
+              <img src="img/work/tenclub/tenclub_01.jpg">
+            </a>
+          </li>
+          <li class="contents__item">
+            <a href="img/work/tenclub/tenclub_02.jpg" data-lightbox="works02">
+              <img src="img/work/tenclub/tenclub_02.jpg">
+            </a>
+          </li>
+          <li class="contents__item">
+            <a href="img/work/tenclub/tenclub_03.jpg" data-lightbox="works02">
+              <img src="img/work/tenclub/tenclub_03.jpg">
+            </a>
+          </li>
+          <li class="contents__item">
+            <a href="img/work/tenclub/tenclub_04.jpg" data-lightbox="works02">
+              <img src="img/work/tenclub/tenclub_04.jpg">
+            </a>
+          </li>
+        </ul>
+
+        <p class="contents__text">
+					Data.<br>
+					竣工：2021年11月<br>
+					所在地：東京都杉並区<br>
+					用途：バー<br>
+					構造：RC造<br>
+					設計：生田一希建築設計事務所<br>
+					施工：Earthy Blue Inc.<br>
+					設計期間：2021.07-2021.10<br>
+					施工期間：2021.10-2021.11<br>
+					延床面積：23.15㎡
+        </p>
+      </section>
+    </main>
+  {{/content}}
+{{/extend}}

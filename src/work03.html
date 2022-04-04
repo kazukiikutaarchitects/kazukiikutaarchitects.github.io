@@ -1,0 +1,67 @@
+---
+bodyclass: work01
+meta:
+  favicon: /img/favicon.ico
+  title: 生田一希建築設計事務所 | Kazuki Ikuta Architects
+  description: 東京都大田区を拠点に活動する生田一希建築設計事務所です。業務内容：建築設計/内装設計/環境計画/家具意匠/図面下請け/CGパース作成/CG動画作成
+  image: img/og-image.jpg
+  url: https://kazukiikutaarchitects.github.io/
+  robots: index, follow
+
+scripts:
+  - js/main.js
+stylesheets:
+  - styles/main.scss
+  - https://fonts.googleapis.com/css?family=Noto+Sans+JP
+  - https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700&display=swap&subset=japanese
+
+uri: /
+---
+
+{{#extend "pages"}}
+  {{#content "main"}}
+    <main class="main">
+
+      <section class="contents">
+        <h2 class="contents__title">
+          ICHIKAWA RENOVATION PJ
+        </h2>
+        <h3 class="contents__subtitle">
+          Itchikawa-shi,Chiba,Japan
+        </h3>
+
+        <ul class="contents__list">
+          <li class="contents__item">
+            <a href="img/work/ichikawa renovation/ichikawa_01.png" data-lightbox="works03">
+              <img src="img/work/ichikawa renovation/ichikawa_01.png">
+            </a>
+          </li>
+          <li class="contents__item">
+            <a href="img/work/ichikawa renovation/ichikawa_02.png" data-lightbox="works03">
+              <img src="img/work/ichikawa renovation/ichikawa_02.png">
+            </a>
+          </li>
+          <li class="contents__item">
+            <a href="img/work/ichikawa renovation/ichikawa_03.png" data-lightbox="works03">
+              <img src="img/work/ichikawa renovation/ichikawa_03.png">
+            </a>
+          </li>
+          <li class="contents__item">
+            <a href="img/work/ichikawa renovation/ichikawa_04.png" data-lightbox="works03">
+              <img src="img/work/ichikawa renovation/ichikawa_04.png">
+            </a>
+          </li>
+        </ul>
+
+        <p class="contents__text">
+          Data.<br>
+          竣工：unbuild<br>
+          所在地：千葉県市川市<br>
+          用途：住宅<br>
+          設計：生田一希建築設計事務所<br>
+          施工：-
+        </p>
+      </section>
+    </main>
+  {{/content}}
+{{/extend}}

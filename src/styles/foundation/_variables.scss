@@ -1,0 +1,32 @@
+/* Colors */
+$color-black: #333;
+
+/* Media Query */
+@mixin mobile {
+  @media only screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 641px) {
+    @content;
+  }
+}
+
+/* Type */
+%fontFamily-default {
+  font-family: 'Noto Serif JP', 'M PLUS 1p',serif;
+}
+
+%text-body {
+  font-size: 1.4rem;
+  color: $color-black;
+  line-height: 1.8rem;
+}
